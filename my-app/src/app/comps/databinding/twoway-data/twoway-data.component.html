@@ -1,0 +1,38 @@
+
+
+<br><br>
+
+<h3>Two-way Data Binding</h3>
+
+<input type="text" placeholder="Your Email" [(ngModel)]="email"><br>
+
+{{email}} is available
+
+<br><br>
+
+Checkboxes and Radio Buttons:<br>
+<input type="checkbox" [(ngModel)]="ischecked"><br>
+
+Checked : {{ischecked}}
+<br><br>
+
+<input type="radio" [(ngModel)]="gender" value="Male">Male
+<input type="radio" [(ngModel)]="gender" value="Female">Female<br>
+Gender : {{gender}}
+
+<br><br>
+
+<input type="range" [(ngModel)]="sliderval">
+Value: {{sliderval}}
+
+<br><br>
+Select Deropdowns<br>
+
+<select [(ngModel)]="tech">
+    <option value="angular">angular</option>
+    <option value="Vue">Vue</option>
+    <option value="react">react</option>
+    <option value="angular">angular</option>
+</select>
+
+selected: {{tech}}

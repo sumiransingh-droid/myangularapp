@@ -1,0 +1,45 @@
+<h2>Property Binding</h2>
+<ul>
+    <li>[] Square Brackets</li>
+    <li>[attr] Attribute Binding</li>
+    <li>[bind-attribute] Bind Attribute</li>
+</ul>
+
+<img [src]="myImg" width="300">
+<br>
+<input type="text" [value]="dymvalue">
+
+<div [attr.aria-label]="dymvalue">Watch</div>
+
+<div class="row">
+    <div class="col-md-12 g-5">
+        <div class="card-group m-4">
+            <div class="card" [hidden]="ishidden">
+                <img src="https://cdn.pixabay.com/photo/2018/08/12/16/59/parrot-3601194_640.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <button [disabled] ="!product.item1" class="btn btn-primary btn-lg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2023/03/28/08/51/heron-7882659_640.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <button [disabled] ="!product.item2" class="btn btn-primary btn-lg">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/05/08/13/15/bird-2295431_640.jpg" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <button [disabled] ="!product.item3" class="btn btn-primary btn-lg">Add to Cart</button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

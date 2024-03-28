@@ -1,0 +1,60 @@
+<h3>Event-binding works!</h3>
+
+1. Click
+<br><br>
+
+<button (click)="clickMethod()" class="btn btn-success">+ count</button>
+<button (click)="clickMethodsub()" class="btn btn-warning">count -</button><br>
+
+count: {{ count }}
+
+<br><br><br>
+2. Pass data to Event
+<br>
+<button (click)="changeval('Sita')" class="btn btn-danger">Name Change</button><br>
+value : {{value}}
+
+<br><br><br>
+Let's understand $Event<br>
+<input type="text" (input)="impchange($event)" placeholder="Enter Name">
+value : {{value2}}
+
+<br><br><br>
+
+3. change (Select)
+<br>
+<select (change)="OnSelectChange($event)">
+    <option value="angular">angular</option>
+    <option value="React">React</option>
+    <option value="vue">vue</option>
+    <option value="javascript">javascript</option>
+</select>
+value: {{value3}}
+
+<br><br><br>
+4.Scroll
+<br>
+
+
+<div style="height: 100px; overflow-y: scroll;" (scroll)="onScroll($event)">
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+    <div>1</div>
+</div>
